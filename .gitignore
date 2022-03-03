@@ -135,6 +135,7 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
+
 # Eclipse m2e generated files
 # Eclipse Core
 .project
@@ -163,3 +164,23 @@ buildNumber.properties
 # Support for Project snippet scope
 
 # End of https://www.toptal.com/developers/gitignore/api/maven,intellij+all,macos,visualstudiocode
+.vscode
+aopalliance
+asm
+backport-util-concurrent
+ch
+classworlds
+com
+commons-codec
+commons-collections
+commons-io
+io
+commons-lang
+jakarta
+javax
+junit
+net
+org
+pl
+xmlpull
+xpp3
