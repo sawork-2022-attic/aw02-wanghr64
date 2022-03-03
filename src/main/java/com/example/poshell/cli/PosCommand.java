@@ -39,8 +39,16 @@ public class PosCommand {
         return "ERROR";
     }
 
-    @ShellMethod(value = "Print Items in the Cart", key = "pc")
+    @ShellMethod(value = "Print Items in the Cart", key = "v")
     public String printCart() {
         return posService.getCart().toString();
+    }
+
+    @ShellMethod(value = "Modify the Cart", key = "m")
+    public String modifyCart(String productId, int amount) {
+        if (posService.modify(productId, amount)) {
+            return posService.getCart().toString();
+        }
+        return "ERROR";
     }
 }

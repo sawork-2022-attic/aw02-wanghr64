@@ -15,4 +15,9 @@ public class Product {
         return getId() + "\t" + getName() + "\t" + getPrice();
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return id.equals(((Product) obj).id) && name.equals(((Product) obj).name) && price == ((Product) obj).price;
+    }
+
 }
