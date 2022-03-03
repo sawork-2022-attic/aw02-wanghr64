@@ -38,4 +38,9 @@ public class PosCommand {
         }
         return "ERROR";
     }
+
+    @ShellMethod(value = "Print Items in the Cart", key = "pc")
+    public String printCart() {
+        return posService.getCart().toString();
+    }
 }
